@@ -53,7 +53,7 @@ Vad är/ingår en/i delivery pipeline?
 * Skapa testmiljö
 * Leverera
 * Testa
-* :grey:`Driftsätt`
+* :grey:`Driftsätta`
 
 Best practice?
 ==============
@@ -64,6 +64,7 @@ Best practice?
 4. Leverera till testmiljöer
 
 * Avbryt vid fel!
+* Automatisk rollback?
 
 .. class:: illustration
 .. image:: img/testbot.jpeg
@@ -95,8 +96,9 @@ Huvudsakliga problem som måste adresseras?
 ==========================================
 
 * Repeterbarhet
+* Hastighet
 * Testtäckning
-* Produktionslika testmiljöer
+* Produktionslikhet
 * Hemligheter
 
 .. class:: illustration
@@ -125,7 +127,6 @@ Automatiska & manuella flöden?
 .. class:: illustration
 .. image:: img/question.png
      :alt: [question mark]
-
 
 :single:`Tack för ordet!`
 =========================
