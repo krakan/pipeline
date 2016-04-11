@@ -22,6 +22,6 @@ index.html: $(html)
 %-print.pdf: %.pdf
 	./twoup.sh $?
 
-publish: $(html) $(css) img ui index.html
+publish: $(html) $(css) $(pdfs) img ui index.html
 	@sshadd
 	rsync -ztvua --delete --progress $? lekstugan:/var/www/jonas.init.se/htdocs/pipeline/
