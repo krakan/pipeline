@@ -1,0 +1,135 @@
+.. -*- mode: rst -*-
+.. This document is formatted for rst2s5
+.. http://docutils.sourceforge.net/
+
+==================
+Delivery Pipelines
+==================
+
+|
+
+|
+
+|
+
+.. image:: img/init180x170.gif
+   :alt: Init AB
+   :target: http://www.init.se/
+
+|
+
+.. class:: center
+
+      Jim Svensson <jimpa@init.se> & Jonas Linde <jonas@init.se>
+
+.. raw:: pdf
+
+      PageBreak oneColumn
+
+.. footer::
+  jonas@init.se & jimpa@init.se
+
+.. role:: single
+   :class: single
+
+.. role:: grey
+   :class: grey
+
+Frågeställningar
+================
+
+* Vad är/ingår en/i delivery pipeline?
+* Best practice? Verktyg?
+* Huvudsakliga problem som måste adresseras?
+* Automatiska & manuella flöden?
+
+Vad är/ingår en/i delivery pipeline?
+====================================
+
+* :grey:`Koda`
+* Bygga
+* Enhetstesta
+* Paketera
+* Skapa testmiljö
+* Leverera
+* Testa
+* :grey:`Driftsätt`
+
+Best practice?
+==============
+
+1. Checka in till en branch
+2. Enhetstesta
+3. Merga till master
+4. Leverera till testmiljöer
+
+* Avbryt vid fel!
+
+.. class:: illustration
+.. image:: img/testbot.jpeg
+     :alt: [testbot]
+
+Verktyg?
+========
+
+* Jenkins
+* Travis CI
+* Go CD
+* ...
+
+.. class:: illustration
+.. image:: img/jenkins.png
+     :alt: [Jenkins]
+
+Best practice för verktyg?
+==========================
+
+* Även pipeline-definitionen är kod!
+* Visualisering är viktigt!
+
+.. class:: illustration
+.. image:: img/dominoes.png
+     :alt: [dominoes]
+
+Huvudsakliga problem som måste adresseras?
+==========================================
+
+* Repeterbarhet
+* Testtäckning
+* Produktionslika testmiljöer
+* Hemligheter
+
+.. class:: illustration
+.. image:: img/lingon.png
+     :alt: [lingon]
+
+Automatiska & manuella flöden?
+==============================
+
+* Så mycket som möjligt ska ske automatiskt
+* Tunga tester läggs utanför pipelinen
+
+  * ex.v. prestandatester
+    
+* Produktionssättning kan vara automatisk
+
+  * om man litar på testerna  
+
+.. class:: illustration
+.. image:: img/deploy.png
+     :alt: [deploy button]
+
+:single:`Frågor?`
+=================
+
+.. class:: illustration
+.. image:: img/question.png
+     :alt: [question mark]
+
+
+:single:`Tack för ordet!`
+=========================
+
+.. class:: illustration
+.. image:: img/dominoes2.jpg
+     :alt: [more dominoes]
