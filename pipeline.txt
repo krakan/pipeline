@@ -51,9 +51,12 @@ Vad är/ingår en/i delivery pipeline?
 ====================================
 
 * :grey:`Koda`
+* Källkodsrepository
 * Bygga
 * Enhetstesta
 * Paketera
+* Kolla kodkvalitet
+* Mockade integrationstester
 * Skapa testmiljö
 * Leverera
 * Testa
@@ -69,7 +72,8 @@ Best practice?
 1. Checka in till en branch
 2. Enhetstesta
 3. Merga till master
-4. Leverera till testmiljöer
+4. Git flow
+5. Leverera till testmiljöer
 
 * Avbryt vid fel!
 * Automatisk rollback?
@@ -84,6 +88,7 @@ Verktyg?
 * Jenkins
 * Travis CI
 * Go CD
+* Sonar kodanalys
 * ...
 
 .. class:: illustration
@@ -120,7 +125,8 @@ Automatiska & manuella flöden?
 * Tunga tester läggs utanför pipelinen
 
   * ex.v. prestandatester
-    
+
+* Tunga tester kan även delas upp och köras parallellt
 * Produktionssättning kan vara automatisk
 
   * om man litar på testerna  
