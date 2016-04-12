@@ -122,7 +122,7 @@ Automatiska & manuella flöden?
 ==============================
 
 * Så mycket som möjligt ska ske automatiskt
-* Tunga tester läggs utanför pipelinen
+* Långsamma tester kan läggas utanför pipelinen
 
   * ex.v. prestandatester
 
