@@ -37,6 +37,7 @@ do
     xdotool click 1
     ((i++))
 done
+echo -ne ".  \r"
 
 xdotool key ctrl+shift+q
 
