@@ -43,6 +43,10 @@ Frågeställningar
 * Huvudsakliga problem som måste adresseras?
 * Automatiska & manuella flöden?
 
+.. class:: illustration
+.. image:: img/pipeline.jpg
+     :alt: [pipeline]
+
 Vad är/ingår en/i delivery pipeline?
 ====================================
 
@@ -54,6 +58,10 @@ Vad är/ingår en/i delivery pipeline?
 * Leverera
 * Testa
 * :grey:`Driftsätta`
+
+.. class:: illustration
+.. image:: img/checkbox.gif
+     :alt: [check]
 
 Best practice?
 ==============
