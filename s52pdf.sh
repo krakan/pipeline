@@ -15,14 +15,20 @@ export DISPLAY=:17
 Xvfb $DISPLAY -screen 0 1920x1080x24+32 &
 fvwm 2>/dev/null &
 chromium --kiosk $name.html 2>/dev/null &
-echo -ne "-\r"
-sleep 3
+
+i=-5
+while test $i -lt 0
+do
+    echo -ne "$i\r"
+    sleep 1
+    ((i++))
+done
+echo -ne "  \r"
 
 xsetroot -solid green
 xdotool key F11
 
 rm -f capture??.png
-i=0
 while test $i -lt $n
 do
     echo -ne "$i\r"
