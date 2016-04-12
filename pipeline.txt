@@ -47,10 +47,9 @@ Frågeställningar
 .. image:: img/pipeline.jpg
      :alt: [pipeline]
 
-Vad är/ingår en/i delivery pipeline?
-====================================
+Vad ingår i en delivery pipeline?
+=================================
 
-* :grey:`Koda`
 * Källkodsrepository
 * Bygga
 * Enhetstesta
@@ -60,7 +59,6 @@ Vad är/ingår en/i delivery pipeline?
 * Skapa testmiljö
 * Leverera
 * Testa
-* :grey:`Driftsätta`
 
 .. class:: illustration
 .. image:: img/checkbox.gif
